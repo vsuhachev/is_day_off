@@ -55,8 +55,8 @@ RSpec.describe IsDayOff do
     it_behaves_like "raises store no data"
   end
 
-  describe ".holyday?" do
-    subject(:f) { described_class.method(:holyday?) }
+  describe ".holiday?" do
+    subject(:f) { described_class.method(:holiday?) }
 
     let(:days) { "01001" * 15 }
 

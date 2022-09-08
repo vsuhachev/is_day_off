@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require "date"
 require_relative "is_day_off/version"
 require_relative "is_day_off/store"
@@ -34,16 +35,16 @@ module IsDayOff
       day_code(date) == "0"
     end
 
-    def holyday?(date)
+    def holiday?(date)
       !workday?(date)
     end
 
     def forward_to_workday(date)
-      move(:holyday?, :next_day, date)
+      move(:holiday?, :next_day, date)
     end
 
     def backward_to_workday(date)
-      move(:holyday?, :prev_day, date)
+      move(:holiday?, :prev_day, date)
     end
 
     def forward_to_holiday(date)
