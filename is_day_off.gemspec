@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Client for isdayoff.ru"
   spec.description = "IsDayOff is a Ruby API client for isdayoff.ru that returns info on working/non-working date for specified date or period."
-  spec.homepage = "https://github.com/vsuhachv/is_day_off"
+  spec.homepage = "https://github.com/vsuhachev/is_day_off"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
